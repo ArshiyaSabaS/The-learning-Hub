@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore courses on LearnSpace — Development, Data, Design, and Business." />
+  <title>Explore Courses — LearnSpace</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+          <span class="logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10L12 5 2 10l10 5 10-5z" /><path d="M6 12v5c0 1.5 3 3 6 3s6-1.5 6-3v-5" /></svg>
+          </span>
+          <span class="brand-name">LearnSpace</span>
+        </a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true" />
+        <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation menu"><span></span><span></span><span></span></label>
+        <div class="nav-links-wrapper">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="paths.html">Learning Path</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link active" href="explore.html">Explore</a></li>
+            <li class="nav-item ms-lg-3 mt-2 mt-lg-0"><a class="btn btn-brand" href="explore.html">Get Started</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="explore" class="section explore-section">
+      <div class="container text-center">
+        <span class="eyebrow eyebrow-center">EXPLORE</span>
+        <h1 class="section-title">What do you want to learn?</h1>
+        <p class="section-sub mx-auto">Start with a topic and find a course that fits your goals. (Visual preview only)</p>
+
+        <div class="search-wrap mx-auto">
+          <label for="course-search" class="visually-hidden">Search for a course</label>
+          <div class="search-box">
+            <svg class="search-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7" /><path d="M21 21l-4.3-4.3" /></svg>
+            <input type="search" id="course-search" class="search-input" placeholder="Search courses, e.g. Web Development" aria-describedby="search-help" />
+            <button type="button" class="btn btn-brand search-btn" aria-label="Search">Search</button>
+          </div>
+          <small id="search-help" class="search-help">Preview only — search functionality is not connected in this demo.</small>
+        </div>
+
+        <div id="categories" class="chips-wrap justify-content-center">
+          <span class="chip chip-dev">Development</span>
+          <span class="chip chip-data">Data</span>
+          <span class="chip chip-design">Design</span>
+          <span class="chip chip-business">Business</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section courses-section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">ALL COURSES</span>
+          <h2 class="section-title">Starter courses to build momentum.</h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <article class="course-card">
+              <div class="course-visual visual-dev">
+                <span class="course-icon" aria-hidden="true">💻</span>
+                <span class="course-badge">Development</span>
+              </div>
+              <div class="course-body">
+                <h3 class="course-title">Web Development Essentials</h3>
+                <p class="course-desc">Build beautiful websites with HTML and CSS.</p>
+                <div class="course-meta">
+                  <span class="meta-pill">🎓 Beginner</span>
+                  <span class="meta-pill">⏱ 4 weeks</span>
+                </div>
+                <a href="paths.html" class="course-link">View Course →</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <article class="course-card">
+              <div class="course-visual visual-design">
+                <span class="course-icon" aria-hidden="true">🎨</span>
+                <span class="course-badge">Design</span>
+              </div>
+              <div class="course-body">
+                <h3 class="course-title">UI/UX Design Fundamentals</h3>
+                <p class="course-desc">Create simple, useful, and beautiful user interfaces.</p>
+                <div class="course-meta">
+                  <span class="meta-pill">🎓 Beginner</span>
+                  <span class="meta-pill">⏱ 3 weeks</span>
+                </div>
+                <a href="paths.html" class="course-link">View Course →</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <article class="course-card">
+              <div class="course-visual visual-data">
+                <span class="course-icon" aria-hidden="true">📊</span>
+                <span class="course-badge">Data</span>
+              </div>
+              <div class="course-body">
+                <h3 class="course-title">Data Fundamentals</h3>
+                <p class="course-desc">Understand data and make informed decisions.</p>
+                <div class="course-meta">
+                  <span class="meta-pill">🎓 Beginner</span>
+                  <span class="meta-pill">⏱ 5 weeks</span>
+                </div>
+                <a href="paths.html" class="course-link">View Course →</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <a href="index.html" class="footer-brand">
+            <span class="logo-mark logo-mark-light" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10L12 5 2 10l10 5 10-5z" /><path d="M6 12v5c0 1.5 3 3 6 3s6-1.5 6-3v-5" /></svg>
+            </span>
+            <span>LearnSpace</span>
+          </a>
+          <p class="footer-summary">A modern online learning space for people who want to grow — one focused skill at a time.</p>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h4 class="footer-heading">Useful Links</h4>
+          <ul class="footer-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="paths.html">Learning Paths</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-4">
+          <h4 class="footer-heading">Explore</h4>
+          <ul class="footer-list">
+            <li><a href="explore.html">Popular Courses</a></li>
+            <li><a href="explore.html#categories">Categories</a></li>
+            <li><a href="about.html#why">Why LearnSpace?</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="footer-divider" />
+      <div class="footer-bottom">
+        <p class="mb-0">© 2026 LearnSpace. All rights reserved.</p>
+        <p class="mb-0 footer-tagline">Keep learning, keep growing.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
